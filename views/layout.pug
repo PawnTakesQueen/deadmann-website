@@ -1,0 +1,29 @@
+doctype html
+meta(charset='utf-8')
+meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+link(rel='stylesheet', href='/stylesheets/layout.css')
+block head
+header
+  nav
+    a(href='/') About
+    a(href='/roadmap') Roadmap
+    a(href='https://github.com/PawnTakesQueen/deadmann', target='_blank') Source
+  img.logo(src='/images/deadmann.png')
+#body
+  block content
+  .push
+footer
+  p
+    b Bitcoin:
+    |  
+    span.mono 1FfVca8Ke7ydm9YnJXdZgEgVP1pVnx6X3q
+    br
+    br
+    b Freenode:
+    |  
+    a(href='irc://irc.freenode.net/#deadmann') #deadmann
+    |  (IRC)
+    br
+    b Tor:
+    |  
+    a(href='http://2ocfmsjcp7ikoj6a.onion', target='_blank') 2ocfmsjcp7ikoj6a.onion

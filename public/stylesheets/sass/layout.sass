@@ -1,0 +1,97 @@
+*
+  word-wrap: break-word
+  &:focus
+    border: 0
+    outline: none
+
+html,
+body
+  height: 100%
+
+body
+  margin: 0
+  position: relative
+
+body,
+input,
+textarea
+  font-family: sans-serif
+
+h1
+  margin: 24px 0 32px
+a
+  color: #cd54ef
+  text-decoration: none
+  &:hover
+    color: #8921bc
+
+header
+  display: block
+  vertical-align: top
+  text-align: center
+  nav
+    height: 48px
+    line-height: 48px
+    text-align: right
+    font-size: 14px
+    a
+      text-decoration: none
+      color: #888
+      margin-right: 24px
+      &.download
+        display: inline-block
+        height: 48px
+        margin-right: 0
+        padding: 0 16px
+        background-color: #2d2d2d
+        color: #fff !important
+        float: left
+        &:hover
+          background-color: #8921bc
+      &:hover
+        color: #2d2d2d
+        cursor: pointer
+  .logo
+    vertical-align: top
+    padding-top: 36px
+    height: 64px
+    width: 64px
+
+#body
+  color: #2d2d2d
+  padding: 0 32px 32px
+  max-width: 600px
+  text-align: center
+  width: calc(100% - 64px)
+  min-height: calc(100% - 180px)
+  margin: 0 auto -136px
+  overflow: hidden
+  .alert
+    background-color: #ffaaaa
+    border: 2px solid #ee7777
+    color: rgba(0, 0, 0, 0.5)
+    margin-top: 24px
+    padding: 16px 10px
+  .text
+    text-align: left
+  .strike
+    text-decoration: line-through
+  p + ul
+    margin-top: 32px
+    margin-bottom: 32px
+  ul
+    text-align: left
+    li
+      margin-bottom: 4px
+      &:last-of-type
+        margin-bottom: 0
+  .push
+    height: 120px
+
+footer
+  height: 120px
+  text-align: center
+  .mono
+    font-family: monospace
+  a
+    text-decoration: none
