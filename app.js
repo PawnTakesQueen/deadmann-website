@@ -8,8 +8,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     sassMiddleware = require('node-sass-middleware');
 
-var index = require('./routes/index'),
-    roadmap = require('./routes/roadmap');
+var index = require('./routes/index');
 
 var app = express();
 
@@ -36,7 +35,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/roadmap', roadmap);
 
 module.exports = app;
 
