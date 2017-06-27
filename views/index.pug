@@ -1,14 +1,18 @@
 extends ./layout.pug
 
 block head
-  title deadmann - An Anonymized Dead Man's Switch Network
+  title Deadmann - An Anonymized Dead Man's Switch Network
 
 block content
-  h1 What Is deadmann?
-  .alert deadmann is currently in Beta and is only an experiment.  Please keep that in mind and be careful before using it.
+  h1 What Is Deadmann?
+  .alert
+    b Deadmann is going through a major development update at the moment for v0.3.0-beta, which may take a while to complete.  The design paper is being rewritten as well.  Please be patient.  My apologies for the inconvenience.
+    br
+    br
+    | Deadmann is currently in Beta and is only an experiment.  Please keep that in mind and be careful before testing it.
   .text
-    p deadmann is an online dead man's switch network.  Whenever a switch (known as a deadmann node) has not reauthenticated after a set period of time, it expires and an alert message is broadcasted to any deadmann node that communicates with it.  Node to node connections have perfect foward secrecy with strong encryption.
-    p All connections to any deadmann node is done over tor.  Tor provides deadmann with additional end-to-end encryption along with self validation and anonymity for all nodes.  Just run deadmann on any computer connected to the internet.  No configuration with the network firewall is necessary.  The Raspberry Pi 3 makes for a really great machine to run a deadmann node on, as you can have one plugged into any outlet close enough to a stable wifi internet connection.
+    p Deadmann is an online dead man's switch network.  Whenever a switch (known as a deadmann node) has not reauthenticated after a set period of time, it expires and an alert message is broadcasted to any deadmann node that communicates with it.  Node to node connections have perfect foward secrecy with strong encryption.
+    p All connections to any deadmann node is done over tor.  Tor provides deadmann with additional end-to-end encryption along with self validation and anonymity for all nodes.  Quite often, no configuration with the network firewall is necessary.  The Raspberry Pi 3 makes for a really convenient machine to run a Deadmann node on, as you can have one plugged into a power outlet close enough to a stable wifi internet connection.
     p Any further details can be found in the 
-      a(href='https://github.com/PawnTakesQueen/deadmann/blob/beta/README.md', target='_blank') README
+      a(href='https://github.com/ViGrey/deadmann/blob/beta/README.md', target='_blank') README
       |  file.
